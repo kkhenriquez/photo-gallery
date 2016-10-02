@@ -25,7 +25,7 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
 gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
-			baseDir: 'dist'
+			baseDir: 'app'
 		},
 	})
 });
@@ -34,26 +34,26 @@ gulp.task('useref', function() {
 	return gulp.src('app/*.html')
 	.pipe(useref())
 	.pipe(gulpIf('*.css', cssnano()))
-	.pipe(gulp.dest('dist'))
+	.pipe(gulp.dest('docs'))
 });
 
 
 gulp.task('views', function() {
 	return gulp.src('app/views/*.html')
-	.pipe(gulp.dest('dist/views'))
+	.pipe(gulp.dest('docs/views'))
 });
 
 gulp.task('scripts', function() {
 	return gulp.src('app/js/**/*.js')
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('docs/js'))
 });
 
-gulp.task('clean:dist', function() {
-	return del.sync('dist');
+gulp.task('clean:docs', function() {
+	return del.sync('docs');
 });
 
 gulp.task('build', function (callback) {
-	runSequence('clean:dist', ['sass', 'views', 'scripts'], 'useref', callback)
+	runSequence('clean:docs', ['sass', 'views', 'scripts'], 'useref', callback)
 });
 
 gulp.task('default', function (callback) {
