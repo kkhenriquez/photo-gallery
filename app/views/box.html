@@ -1,0 +1,25 @@
+<div class="modal-body">
+
+	<!-- title -->
+	<div class="lightbox-title-container">
+		<p>{{ Lightbox.title }}</p>
+		<button type="button" class="close" aria-label="Close" aria-hidden="true" ng-click="$dismiss()"><span aria-hidden="true">&times;</span></button>
+	</div>
+	
+	<!-- image -->
+	<div class="lightbox-image-container">
+		<img lightbox-src="{{ Lightbox.imageUrl }}">
+	</div>
+
+	<!-- navigation -->
+	<div class="lightbox-nav">
+		<div class="" ng-if="Lightbox.images.length > 1">
+			<a class="btn nav-button" ng-click="Lightbox.prevImage()">
+				‹ Previous
+			</a>
+			<a class="btn nav-button" ng-click="Lightbox.nextImage()">
+				Next ›
+			</a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="album-view">
+  <div class="container">
+
+    <h2>Photos in Album {{ photos[0].albumId }} </h2><span><a href="#/" class="btn back">Back</a></span>
+    
+    <div class="row">
+      <div class="col-md-3 col-xs-6" ng-repeat="photo in photos">
+        <div class="album-card">
+          <a class="thumbnail picture" ng-click="openLightboxModal($index)">
+            <img ng-src="{{ photo.thumbnailUrl }}">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

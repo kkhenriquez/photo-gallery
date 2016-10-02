@@ -1,0 +1,20 @@
+<div class="home-view">
+  <div class="container">
+
+    <h2>Recent Albums</h2>
+
+    <div class="row">
+      <div class="col-md-3 col-xs-6 grid" ng-repeat="album in albums">
+        <div class="home-card">
+            <a ng-href="#/albums/{{$index+1}}" class="thumbnail thumbnail-card">
+              <p class="album-id" ng-style="{background: doc_classes_colors[$index % doc_classes_colors.length]}">Album {{ album.id }}</p>
+              <p class="album-title">{{ album.title }}</p>
+            </a>        
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

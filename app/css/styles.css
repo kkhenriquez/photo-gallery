@@ -1,0 +1,108 @@
+/* Variables */
+/* Global Styles */
+body {
+  background: #f2f3f4;
+  font-family: "Montserrat", sans-serif; }
+
+header {
+  background: #303030;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0 30px; }
+
+h1, h2 {
+  font-family: "Passion One", cursive;
+  letter-spacing: 2px; }
+
+h2 {
+  margin: 30px 0 20px; }
+
+footer p {
+  margin: 30px 0; }
+
+footer a {
+  color: #3f51b5; }
+  footer a:hover {
+    color: #3f51b5; }
+
+/* Home view styles */
+p.album-id {
+  font-weight: 700; }
+
+.grid {
+  padding-right: 4px;
+  padding-left: 4px; }
+
+.home-card .thumbnail-card {
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+  min-height: 140px;
+  padding: 0;
+  transition: 0.3s;
+  margin-bottom: 30px; }
+  .home-card .thumbnail-card:hover {
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .home-card .thumbnail-card .album-id {
+    color: #ffffff;
+    padding: 16px;
+    font-size: 1em;
+    height: 48px;
+    margin: 0; }
+  .home-card .thumbnail-card .album-title {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 16px;
+    margin: 0; }
+
+/* Album view styles */
+a.back {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 9em;
+  background: #3f51b5;
+  color: #ffffff;
+  margin: 8px 0 10px;
+  padding: 16px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: 0.3s;
+  border-radius: 2px;
+  letter-spacing: 1px; }
+  a.back:hover {
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
+
+.album-card {
+  min-height: 200px;
+  width: 160px;
+  margin-right: auto;
+  margin-left: auto; }
+
+a.picture {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: #303030;
+  transition: all 0.3s ease-out; }
+  a.picture:hover {
+    border-color: #3f51b5;
+    background: #ffffff; }
+
+/* Lightbox Styles */
+.modal-content {
+  border-radius: 2px; }
+
+.nav-button {
+  background: #3f51b5;
+  color: #ffffff;
+  margin: 10px 5px 0;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  border-radius: 2px;
+  letter-spacing: 1px; }
+  .nav-button:hover {
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }

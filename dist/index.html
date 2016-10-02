@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Image Gallery by Kevin Henriquez</title>
+	<meta name="description" content="An image gallery using AngularJS">
+	<meta name="author" content="Kevin Henriquez">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Load bootstrap for easy layout -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Passion+One" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+
+	<!-- Loading Angular libs -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-sanitize.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.14.1/lodash.min.js"></script>
+
+	
+</head>
+
+<body ng-app="GalleryApp">
+
+	<header>
+		<div class="container">
+			<h1>Image Gallery</h1>
+		</div>
+	</header>
+
+	<div ng-view id="view"></div>
+
+	<footer>
+		<div class="container text-center">
+			<hr>
+			<p>Crafted by <a href="http://kkhenriquez.github.io/home" target="_blank">Kevin Henriquez</a>.</p>
+		</div>
+	</footer>
+
+	
+	<!-- Additional Scripts (Third party)-->
+	<script src="js/angular-bootstrap-lightbox.js"></script>	
+	<script src="js/ui-bootstrap-custom-tpls-2.0.0.min.js"></script>
+	
+	<!-- App files -->
+	<!-- Modules -->
+	<script src="js/app.js"></script>
+
+	<!-- Services -->
+	<script src="js/services/albums.js"></script>
+	<script src="js/services/photos.js"></script>
+
+	<!-- Controllers -->
+	<script src="js/controllers/HomeController.js"></script>
+	<script src="js/controllers/AlbumController.js"></script>
+
+	<!-- End of app files -->
+	
+
+</body>
+</html>

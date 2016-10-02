@@ -1,0 +1,152 @@
+/* Variables */
+
+$bg-color: #f2f3f4;
+$bg-header: #303030;
+$font-header: 'Passion One', cursive;
+$font-body: 'Montserrat', sans-serif;
+$accent-color: rgb(63,81,181);
+
+
+/* Global Styles */
+
+body {
+	background: $bg-color;
+	font-family: $font-body;
+}
+
+header {
+	background: $bg-header;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	text-align: center; 
+	color: #ffffff;
+	padding: 20px 0 30px;
+}
+
+h1, h2 {
+	font-family: $font-header;
+	letter-spacing: 2px;
+}
+
+h2 {
+	margin: 30px 0 20px;
+}
+
+footer {
+	p {
+		margin: 30px 0;
+	}
+
+	a {
+		color: $accent-color;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+}
+
+/* Home view styles */
+
+p.album-id {
+	font-weight: 700;
+}
+
+.grid {
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.home-card .thumbnail-card {
+	background-color: white;
+	border: none;
+	border-radius: 0px;
+	min-height: 140px;
+	padding: 0;
+	transition: 0.3s;
+	margin-bottom: 30px;
+
+	&:hover {
+		text-decoration: none;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	}
+
+	.album-id {
+		color: #ffffff;
+		padding: 16px;
+		font-size: 1em;
+		height: 48px;
+		margin: 0;
+	}
+
+	.album-title {
+		color: rgba(0,0,0,0.87);
+		padding: 16px;
+		margin: 0;
+	}
+}
+
+/* Album view styles */
+
+a.back {
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	width: 9em;
+	background: $accent-color;
+	color: #ffffff;
+	margin: 8px 0 10px;
+	padding: 16px 0;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	transition: 0.3s;
+	border-radius: 2px;
+	letter-spacing: 1px;
+
+	&:hover {
+		color: #ffffff;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+	}
+}
+
+
+.album-card {
+	min-height: 200px;
+  width: 160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a.picture {
+	border: 1px solid transparent;
+	border-radius: 2px;
+	background: rgb(48,48,48);
+	transition: all 0.3s ease-out;
+
+	&:hover {
+		border-color: $accent-color;
+		background: #ffffff;
+	}
+}
+
+
+/* Lightbox Styles */
+
+.modal-content {
+	border-radius: 2px;
+}
+
+.nav-button {
+	background: $accent-color;
+	color: #ffffff;
+	margin: 10px 5px 0;
+	text-align: center;
+	transition: all 0.3s ease-out;
+	border-radius: 2px;
+	letter-spacing: 1px;
+
+	&:hover {
+		color: #ffffff;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+	}
+}
